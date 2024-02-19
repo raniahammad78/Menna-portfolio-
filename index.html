@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menna Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1bd92e9125.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!------------- header ----------------->
+    <div id="header">
+
+        <div class="container  ">
+            <nav class="fixed-header">
+                <!-- <img src="images/logo.png" class="logo"> -->
+                <h1><span>M</span>enna</h1>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about" onclick="scrollToSection('about')">About</a></li>
+                    <li><a href="#services" onclick="scrollToSection('services')">Services</a></li>
+                    <li><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+
+            <div class="header-text">
+                <p>German & English translator</p>
+                <h1>Hi, I'm <span>Mennatallah</span><br>Abu Ayla From Egypt</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------- about -------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="second photo.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As an undergraduate, I bring a strong linguistic foundation in German and English, along with a passion 
+                        language and cultural nuances. Eager to apply academic knowledge in a professional setting, demonstrating a
+                        commitment to precision,collaboration, and continuous learning.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Translator</span><br>Translating from Arabic to German/English</li>
+                            <li><span>Teaching</span><br>Teaching for beginners and intermediate levels</li>
+                            <li><span>Customer service</span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Sep 2022</span><br>Start studying at Ahram Canadian University - ACU</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+         <!------------------ services ------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-language"></i>
+                    <h2>Translating</h2>
+                    <p>I can translate novels and literature books of both English and German Languages to Arabic.</p>
+                </div>
+                <div>
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h2>Teaching</h2>
+                    <p>For simple explanation of English or German grammer, contact me and get your first session for free!!!</p>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!------------------- contact ------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>menakhaledd12@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+2001093899925</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/menna-khaled-sayed/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                class="fa-brands fa-linkedin"></i></a>
+
+                    </div>
+                    <a href="MennatallahKhaledResume.pdf" 
+                    download class="btn btn2">Download Resume</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn3">Submit</button>
+                    </form>
+
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <!-- animation redirection js  -->
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <!-- google sheet script -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzKR7QR_J0dXCM2UfJTIjfejMaD1ks83GSWHoY62i6ou7fadTDQWAzfzzqYIU6f1gc/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ''
+            },5000);
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+
+</html>
