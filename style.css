@@ -439,7 +439,7 @@ nav .fas{
     }
 
     .header-text {
-        margin-top: 100%;
+        margin-top: 600%;
         font-size: 16px;
         padding-bottom: 60%;
     }
@@ -461,7 +461,7 @@ nav .fas{
         background: #ff007b;
         position: fixed;
         top: 0;
-        right: 200px;
+        right: -200px;
         /*to hide the  navigation bar*/
         width: 200px;
         height: 100vh;
