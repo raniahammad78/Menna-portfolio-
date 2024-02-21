@@ -434,7 +434,7 @@ nav .fa-solid {
         background-image: url(fourth photo.png);
         width: 100%;
         height: auto;
-        background-size: 35%;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -442,7 +442,7 @@ nav .fa-solid {
     .header-text {
         margin-top: 60%;
         font-size: 16px;
-        padding-bottom: 50%;
+        padding-bottom: 60%;
     }
 
     .header-text h1 {
@@ -460,7 +460,7 @@ nav .fa-solid {
 
     nav ul {
         background: #ff007b;
-        position: none;
+        position: fixed;
         top: 0;
         right: -200px;
         /*to hide the  navigation bar*/
