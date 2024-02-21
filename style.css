@@ -440,13 +440,13 @@ nav .fa-solid {
     }
 
     .header-text {
-        margin-top: 40%;
+        margin-top: 60%;
         font-size: 16px;
-        padding-bottom: 35%;
+        padding-bottom: 50%;
     }
 
     .header-text h1 {
-        font-size: 35px;
+        font-size: 40px;
     }
 
     .header-text h1 {
@@ -460,7 +460,7 @@ nav .fa-solid {
 
     nav ul {
         background: #ff007b;
-        position: fixed;
+        position: none;
         top: 0;
         right: -200px;
         /*to hide the  navigation bar*/
