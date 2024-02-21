@@ -434,7 +434,7 @@ nav .fa-solid {
         background-image: url(fourth photo.png);
         width: 100%;
         height: auto;
-        background-size: cover;
+        background-size: 50%;
         background-repeat: no-repeat;
     }
 
