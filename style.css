@@ -436,6 +436,7 @@ nav .fa-solid {
         height: auto;
         background-size: 50%;
         background-repeat: no-repeat;
+        background-position: righht;
     }
 
     .header-text {
