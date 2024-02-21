@@ -425,13 +425,13 @@ form textarea {
 }
 
 /* ---------------- css for small screen ------------------ */
-nav .fas{
+nav .fa-solid {
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     #header {
-        background-image: url(fifth photo.png);
+        background-image: url(fifth\ photo.jpeg);
         width: 100%;
         height: auto;
         background-size: cover;
@@ -439,7 +439,7 @@ nav .fas{
     }
 
     .header-text {
-        margin-top: 600%;
+        margin-top: 60%;
         font-size: 16px;
         padding-bottom: 60%;
     }
@@ -452,7 +452,7 @@ nav .fas{
         font-size: 30px;
     }
 
-    nav .fas{
+    nav .fa-solid {
         display: block;
         font-size: 25px;
     }
@@ -475,7 +475,7 @@ nav .fas{
         margin: 25px;
     }
 
-    nav ul .fas{
+    nav ul .fa-solid {
         position: absolute;
         top: 25px;
         left: 25px;
