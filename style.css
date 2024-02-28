@@ -432,9 +432,9 @@ nav .fa-solid {
 @media screen and (max-width: 600px) {
     #header {
         background-image: url(first photo.jpeg);
-        width: 60%;
+        width: 100%;
         height: auto;
-        background-size: upset;
+        background-size: right;
         background-repeat: no-repeat;
     }
 
