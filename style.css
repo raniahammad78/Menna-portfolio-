@@ -151,7 +151,7 @@ nav ul li a:hover::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #ff007b;
+    background: #ff0000;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -170,7 +170,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li span {
-    color: #9200be;
+    color: #ebddde;
     font-size: 14px;
 }
 
@@ -431,15 +431,15 @@ nav .fa-solid {
 
 @media screen and (max-width: 600px) {
     #header {
-        background-image: url(fifth photo.jpeg);
+        background-image: url(fifth\ photo.jpeg);
         width: 100%;
         height: auto;
-        background-size: right;
+        background-size: cover;
         background-repeat: no-repeat;
     }
 
     .header-text {
-        margin-top: 50%;
+        margin-top: 60%;
         font-size: 16px;
         padding-bottom: 60%;
     }
